@@ -464,9 +464,12 @@ function ObjectFieldTemplate(props) {
         });
 
         return (
-            <div className={`form-row ${structureClass}`}>
-                {output}
-            </div>
+            <fieldset class="yoda-array-field">
+                <legend>{props.schema['title']}</legend>
+                <div className={`form-row ${structureClass}`}>
+                    {output}
+                </div>
+            </fieldset>
         );
     }
 
